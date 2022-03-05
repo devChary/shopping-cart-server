@@ -1,4 +1,4 @@
-const bannerRoutes  = require('./banners.js');
+const createRoutes = require('./createsRoutes');
 
 const appRouter = (app, fs) => {
 
@@ -6,7 +6,7 @@ const appRouter = (app, fs) => {
         res.send(`Let's get started`);
     });
 
-    bannerRoutes(app, fs);
+    createRoutes(app, fs);
 };
 
 module.exports = appRouter;
